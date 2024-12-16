@@ -9,7 +9,6 @@
 #include "Eigen/Dense"
 #include "Eigen/Geometry"
 #include <iomanip>
-#include "gnuplot-iostream.h"
 
 class AttitudeController {
 private:
@@ -92,8 +91,6 @@ Eigen::Quaternionf update_orientation(Eigen::Quaternionf& q, const Eigen::Vector
 }
 
 int main() {
-    Gnuplot gp;
-
     std::vector<float> qd_w, qd_x, qd_y, qd_z, q_w, q_x, q_y, q_z;
 
     // Initial angular velocity
